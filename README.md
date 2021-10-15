@@ -10,8 +10,8 @@ This project is built with ReactJS.
 
 ## Screenshots 📷
 
-![](src/images/screenshot1.png)
+![](src/assets/screenshot1.png)
 
 ## Link 🔗
 
-[Click Me!](https://mui-demo.netlify.app/)
+[Click Me!](https://jethroau.netlify.app/)
