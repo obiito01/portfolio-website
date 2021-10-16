@@ -5,6 +5,7 @@ import {
   Title,
   Content,
   Description,
+  GithubLink,
 } from "./ProjectsSection.styled";
 import data from "./data";
 import { Card } from "../../components";
@@ -15,7 +16,10 @@ const ProjectsSection = () => {
       <ProjectsContainer>
         <Title>&lt;projects📂 /&gt;</Title>
         <Description>
-          These are just some of my projects. Feel free to check out my GitHub
+          These are just some of my projects. Feel free to check out my{" "}
+          <GithubLink href={"https://www.github.com/obiito01"} target="_blank">
+            GitHub
+          </GithubLink>{" "}
           for more!
         </Description>
         <Content>

@@ -58,9 +58,22 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+  transition: transform 300ms ease-in-out;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    height: 270px;
+    width: 100vw;
+    background-color: #667fff;
+    transform: ${({ click }) =>
+      click ? `translateX(0)` : `translateX(-100vw)`};
+    box-shadow: rgba(0, 0, 0, 0.35) 0 8px 6px -6px;
   }
 `;
 
@@ -75,6 +88,10 @@ export const NavItem = styled(Link)`
   font-size: 1.2rem;
   cursor: pointer;
 
+  @media screen and (max-width: 768px) {
+    padding: 0 0;
+  }
+
   &.active {
     color: #fff;
     &::after {
@@ -86,6 +103,9 @@ export const NavItem = styled(Link)`
       height: 0.2rem;
       background-color: #fff;
       transition: all 200ms ease-in-out;
+      @media screen and (max-width: 768px) {
+        background-color: transparent;
+      }
     }
   }
 
@@ -104,6 +124,9 @@ export const NavItem = styled(Link)`
     color: #6e00ff;
     &::after {
       background-color: #6e00ff;
+      @media screen and (max-width: 768px) {
+        background-color: transparent;
+      }
     }
   }
 `;

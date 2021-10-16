@@ -78,3 +78,14 @@ export const Description = styled.p`
     margin-bottom: 10px;
   }
 `;
+
+export const GithubLink = styled.a`
+  text-decoration: none;
+  color: #667fff;
+  transition: 100ms all ease-in-out;
+
+  &:hover {
+    color: purple;
+    text-decoration: underline;
+  }
+`;

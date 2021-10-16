@@ -50,7 +50,7 @@ const Navbar = () => {
         <NavHamburger onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </NavHamburger>
-        <NavMenu>
+        <NavMenu click={click} onClick={() => setClick(false)}>
           <NavItem
             to="about"
             offset={-80}
@@ -64,6 +64,7 @@ const Navbar = () => {
               spy={true}
               duration={500}
               smooth="true"
+              onClick={() => setClick(false)}
             >
               About
             </NavLink>
@@ -81,6 +82,7 @@ const Navbar = () => {
               spy={true}
               duration={500}
               smooth="true"
+              onClick={() => setClick(false)}
             >
               Skills
             </NavLink>
@@ -98,6 +100,7 @@ const Navbar = () => {
               spy={true}
               duration={500}
               smooth="true"
+              onClick={() => setClick(false)}
             >
               Projects
             </NavLink>
@@ -115,6 +118,7 @@ const Navbar = () => {
               spy={true}
               duration={500}
               smooth="true"
+              onClick={() => setClick(false)}
             >
               Contact
             </NavLink>
