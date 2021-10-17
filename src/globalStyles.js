@@ -7,6 +7,24 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
     font-family:'Roboto', sans-serif
   }
+
+  
+  ::-webkit-scrollbar {
+  width:1rem;
+  background-color: #fff;
+  }
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius:100vw; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667fff;
+  border-radius:100vw;
+  border:0.1rem #fff solid;
+}
+
 `;
 
 export const Container = styled.div`
