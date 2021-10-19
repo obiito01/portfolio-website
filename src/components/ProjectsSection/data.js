@@ -1,11 +1,11 @@
 const data = [
   {
-    image: require("../../assets/mui-demo.png").default,
-    title: "MUI",
+    image: require("../../assets/travel-advisor.png").default,
+    title: "Travel Advisor",
     description:
-      "This website is build with ReactJS and MaterialUI. This website is fully responsive.",
-    link: "https://mui-demo.netlify.app/",
-    repo: "https://github.com/obiito01/mui-demo",
+      "This project is built with ReactJS and MaterialUI. This project used Travel Advisor API, Google Map API and Places API.",
+    link: "https://mytravel-advisor.netlify.app/",
+    repo: "https://github.com/obiito01/travel-advisor",
   },
   {
     image: require("../../assets/dolla.png").default,
