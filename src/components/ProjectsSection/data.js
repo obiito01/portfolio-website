@@ -27,7 +27,7 @@ const data = [
     image: require("../../assets/cocktail.png").default,
     title: "Cocktails Database",
     description:
-      "This is a cocktail database web app made with React. You can search your favourite cocktail with the app! This app is built with ReactJS.",
+      "This is a cocktail web app made with React. You can search your favourite cocktail with the app! This app is built with ReactJS. Cocktail Database API is used in the project.",
     link: "https://db-cocktail.netlify.app/",
     repo: "https://github.com/obiito01/cocktail-database",
   },
