@@ -24,12 +24,12 @@ const data = [
     repo: "https://github.com/obiito01/ultra-website",
   },
   {
-    image: require("../../assets/cocktail.png").default,
+    image: require("../../assets/crypto-tracker.png").default,
     title: "Cocktails Database",
     description:
-      "This is a cocktail web app made with React. You can search your favourite cocktail with the app! This app is built with ReactJS. Cocktail Database API is used in the project.",
-    link: "https://db-cocktail.netlify.app/",
-    repo: "https://github.com/obiito01/cocktail-database",
+      "This is a Crypto Tracker web app made with React. You can track your favourite Crypto with the app! This app fetch data from CoinGecko API.",
+    link: "https://cryptotrkr.netlify.app//",
+    repo: "https://github.com/obiito01/crypto-tracker",
   },
 ];
 
