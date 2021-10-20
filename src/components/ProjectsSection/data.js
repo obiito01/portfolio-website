@@ -25,9 +25,9 @@ const data = [
   },
   {
     image: require("../../assets/crypto-tracker.png").default,
-    title: "Cocktails Database",
+    title: "Crypto Tracker",
     description:
-      "This is a Crypto Tracker web app made with React. You can track your favourite Crypto with the app! This app fetch data from CoinGecko API.",
+      "This is a Crypto Tracker web app made with React. You can track your favourite Crypto with the app! This app used CoinGecko API.",
     link: "https://cryptotrkr.netlify.app//",
     repo: "https://github.com/obiito01/crypto-tracker",
   },
