@@ -9,7 +9,7 @@ const data = [
   },
   {
     image: require("../../assets/dolla.png").default,
-    title: "Dolla",
+    title: "Dolla Website",
     description:
       "This website is built with ReactJS. React Router, styled-components and React Scroll are used in the project. This website is fully responsive.",
     link: "https://dolla-vbanking.netlify.app/",
@@ -17,7 +17,7 @@ const data = [
   },
   {
     image: require("../../assets/ultra.png").default,
-    title: "Ultra",
+    title: "Ultra Website",
     description:
       "This is Ultra website. This website is made with ReactJS, styled-components and React Router. This website is fully responsive!",
     link: "https://ultra-services.netlify.app/",
