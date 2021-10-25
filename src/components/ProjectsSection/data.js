@@ -11,7 +11,7 @@ const data = [
     image: require("../../assets/whatsapp-clone.png").default,
     title: "WhatsApp Clone",
     description:
-      "This is a WhatsApp clone web app made with React. You can send message in this app! Message data is stored in Firebase Firestore.",
+      "This is a WhatsApp clone web app made with React. You can send message in this app! Message data is stored in Firebase Firestore. Google Authentication is used too!",
     link: "https://whatsapp-clone-d0564.web.app/rooms/HtwWPXyDqHIl8cE3yjtn",
     repo: "https://github.com/obiito01/whatsapp-clone",
   },
