@@ -57,7 +57,7 @@ export const Title = styled.h1`
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
   font-weight: 400;
-  font-family: "Public Sans", sans-serif;
+  letter-spacing: 1px;
 `;
 
 export const Description = styled.p`
@@ -65,7 +65,16 @@ export const Description = styled.p`
   font-size: 0.95rem;
   font-weight: 300;
   margin-bottom: 30px;
-  font-family: "Public Sans", sans-serif;
+  letter-spacing: 0.5px;
+
+  @media (max-width: 768px) {
+    letter-spacing: 0.3px;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 480px) {
+    letter-spacing: 0px;
+    font-size: 0.9rem;
+  }
 `;
 
 export const LinkContainer = styled.div`

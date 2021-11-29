@@ -21,7 +21,10 @@ export const StyledNav = styled.nav`
   margin-bottom: -80px;
   transition: all ease-in-out 300ms;
 `;
-export const NavContainer = styled(Container)`
+export const NavContainer = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 25px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -37,6 +40,7 @@ export const NavLogo = styled(Link)`
   align-items: center;
   height: 100%;
   transition: all 300ms ease-in-out;
+  flex: 1;
   &:hover {
     color: #6e00ff;
     transform: scale(1.02);
@@ -59,7 +63,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   transition: transform 300ms ease-in-out;
-
+  flex: 1;
   @media screen and (max-width: 768px) {
     position: fixed;
     display: flex;
@@ -136,9 +140,10 @@ export const NavLink = styled(Link)``;
 export const NavSocials = styled.div`
   height: 100%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.3rem;
-
+  flex: 1;
   @media screen and (max-width: 1024px) {
     display: none;
   }
@@ -153,5 +158,22 @@ export const SocialLink = styled.a`
 
   &:hover {
     color: #6e00ff;
+  }
+`;
+
+export const ContactButton = styled.button`
+  cursor: pointer;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e00ff;
+  color: white;
+  letter-spacing: 1px;
+  transition: all 200ms ease-in-out;
+  font-size: 0.9rem;
+  font-weight: 400;
+  &:hover {
+    color: #6e00ff;
+    background-color: white;
   }
 `;

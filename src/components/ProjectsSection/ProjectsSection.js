@@ -14,13 +14,13 @@ const ProjectsSection = () => {
   return (
     <Projects id="projects">
       <ProjectsContainer>
-        <Title>&lt;projects📂 /&gt;</Title>
+        <Title>Projects</Title>
         <Description>
-          These are just some of my projects. Feel free to check out my{" "}
+          More projects can be found on my{" "}
           <GithubLink href={"https://www.github.com/obiito01"} target="_blank">
             GitHub
-          </GithubLink>{" "}
-          for more!
+          </GithubLink>
+          !
         </Description>
         <Content>
           {data.map((item, index) => {

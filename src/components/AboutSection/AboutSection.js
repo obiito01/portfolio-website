@@ -15,6 +15,7 @@ import {
   ButtonControl,
   DownloadIcon,
   GithubIcon,
+  ColorSpan,
 } from "./AboutSection.styled";
 import "./Wave.css";
 import cv from "./CV2022.pdf";
@@ -42,22 +43,23 @@ const AboutSection = () => {
           </ContentLeft>
           <ContentRight>
             <TopLine>&lt;about /&gt;</TopLine>
-            <Title>So...who am I ❓</Title>
+            <Title>So...who am I?</Title>
             <Subtitle>
-              Jethro Au, a <span style={{ color: "red" }}>web developer</span>!
-              💻
+              Jethro Au, a <ColorSpan color="red">web developer</ColorSpan>! 💻
             </Subtitle>
             <Paragraph>
-              &lt;🌟&gt; A passionate web developer with great interest in the
-              web development. Excellent development skills and project
-              experience gained from my education and personal projects. Very
-              curious about different tech stacks. Currently learning front-end
-              and my ultimate goal is to become a
-              <span style={{ color: "red", fontWeight: "400" }}>
-                {" "}
-                full-stack developer!{" "}
-              </span>
-              &lt;/🌟&gt;
+              A passionate web developer with great interest in the web
+              development. Love to learn different tech stacks and develop
+              different web apps. Excellent development skills and project
+              experience gained from my education and personal projects. My main
+              tech stack involves <ColorSpan fw="400">ReactJS</ColorSpan>,{" "}
+              <ColorSpan fw="400">Node.js</ColorSpan>,{" "}
+              <ColorSpan fw="400">Express.js</ColorSpan>, and{" "}
+              <ColorSpan fw="400">MongoDB</ColorSpan>, the{" "}
+              <ColorSpan color="#667fff" fw="400">
+                MERN
+              </ColorSpan>{" "}
+              stack.
             </Paragraph>
             <ButtonControl>
               <a href={cv} download="CV.pdf" style={{ textDecoration: "none" }}>

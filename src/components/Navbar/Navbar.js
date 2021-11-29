@@ -16,6 +16,7 @@ import {
   NavLink,
   NavSocials,
   SocialLink,
+  ContactButton,
 } from "./Navbar.styled";
 import { Link } from "react-scroll";
 
@@ -125,15 +126,18 @@ const Navbar = () => {
           </NavItem>
         </NavMenu>
         <NavSocials>
-          <SocialLink href="https://instagram.com/jethroau" target="_blank">
-            <FaInstagram />
-          </SocialLink>
           <SocialLink href="https://github.com/obiito01" target="_blank">
-            <FaGithub />
+            <FaGithub style={{ fontSize: "28px" }} />
           </SocialLink>
-          <SocialLink href="https://linkedin.com" target="_blank">
-            <FaLinkedin />
-          </SocialLink>
+          <Link
+            to="contact"
+            spy={true}
+            duration={500}
+            smooth="true"
+            offset={-80}
+          >
+            <ContactButton>Contact Me!</ContactButton>
+          </Link>
         </NavSocials>
       </NavContainer>
     </StyledNav>

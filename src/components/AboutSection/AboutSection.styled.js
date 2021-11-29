@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 import { BsDownload, BsGithub } from "react-icons/bs";
 
+export const ColorSpan = styled.span`
+  color: ${({ color }) => color};
+  font-weight: ${({ fw }) => fw};
+`;
+
 export const About = styled.section`
   position: relative;
   height: calc(100vh - 80px);
@@ -77,36 +82,37 @@ export const TopLine = styled.p`
   }
 `;
 export const Title = styled.h1`
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 300;
   margin-bottom: 10px;
+  letter-spacing: 1px;
   @media (max-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 5px;
   }
   @media (max-width: 768px) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 0px;
   }
   @media (max-width: 480px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 0px;
   }
 `;
 export const Subtitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 50px;
-
+  letter-spacing: 1px;
   @media (max-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   @media (max-width: 768px) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
   }
   @media (max-width: 480px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 `;
@@ -114,7 +120,7 @@ export const Paragraph = styled.p`
   margin-bottom: 40px;
   font-size: 1.5rem;
   font-weight: 300;
-
+  letter-spacing: 1px;
   @media (max-width: 1024px) {
     font-size: 1.3rem;
   }
@@ -168,7 +174,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   margin-right: 20px;
-
+  cursor: pointer;
   &:hover {
     background-color: #6e00ff;
     transform: scale(1.05);

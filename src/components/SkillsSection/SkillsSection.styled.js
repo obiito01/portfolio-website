@@ -2,36 +2,25 @@ import styled, { keyframes } from "styled-components";
 import { Container } from "../../globalStyles";
 
 export const Skills = styled.section`
-  height: calc(100vh - 80px);
-  min-height: 800px;
+  /* height: calc(100vh - 80px); */
+  min-height: calc(100vh - 80px);
   background-color: #f8f9f9;
 `;
 
 export const SkillsContainer = styled(Container)`
-  padding: 30px 0;
   height: 100%;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 20px;
 `;
-const colorchange = keyframes`
- 0% { }
-50%{
-  transform:scale(1.3)
-}
- 100% {transform:scale(1)}
-`;
+
 export const Title = styled.h1`
-  color: #808080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #000;
   font-size: 2.2rem;
-  padding: 40px 0;
-  font-weight: 400;
-  animation: ${colorchange} 10s infinite alternate;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+
   @media (max-width: 1024px) {
     font-size: 2rem;
   }
@@ -43,9 +32,17 @@ export const Title = styled.h1`
   }
 `;
 
+export const Description = styled.p`
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+`;
+
 export const Grid = styled.div`
   width: 100%;
-  height: 100%;
+  row-gap: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -53,6 +50,7 @@ export const Grid = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
   }
   @media (max-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
@@ -74,9 +72,9 @@ export const GridItem = styled.div`
 `;
 
 export const ItemIcon = styled.img`
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   margin-bottom: 15px;
 
   @media (max-width: 1024px) {
@@ -92,7 +90,7 @@ export const ItemIcon = styled.img`
   @media (max-width: 480px) {
     width: 50px;
     height: 50px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 `;
 export const ItemName = styled.h2`

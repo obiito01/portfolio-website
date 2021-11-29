@@ -53,6 +53,7 @@ export const TopLine = styled.p`
 export const Title = styled.h1`
   font-size: 2.8rem;
   margin-bottom: 5px;
+  letter-spacing: 1px;
 
   @media (max-width: 1024px) {
     font-size: 2.5rem;
@@ -69,7 +70,7 @@ export const Subtitle = styled.h2`
   font-weight: 300;
   color: #fff;
   margin-bottom: 50px;
-
+  letter-spacing: 2px;
   @media (max-width: 1024px) {
     font-size: 1.3rem;
   }
@@ -98,7 +99,7 @@ export const HeroRightContent = styled.div`
 export const Image = styled.img`
   width: 100%;
   transition: all 500ms ease-in-out;
-
+  cursor: pointer;
   @media (hover: hover) {
     &:hover {
       transform: scale(1.1);

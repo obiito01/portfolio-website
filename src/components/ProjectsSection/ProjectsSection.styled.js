@@ -20,14 +20,13 @@ export const ProjectsContainer = styled(Container)`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 50px 20px;
 `;
 export const Title = styled.h1`
-  padding: 0 20px;
   font-size: 2.5rem;
   font-weight: 300;
-  margin-top: 70px;
   margin-bottom: 20px;
-
+  letter-spacing: 2px;
   width: 100%;
 
   @media (max-width: 1024px) {
@@ -60,9 +59,10 @@ export const Content = styled.div`
 
 export const Description = styled.p`
   width: 100%;
-  padding: 0 20px;
   margin-bottom: 50px;
   font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
 
   @media (max-width: 1024px) {
     text-align: center;

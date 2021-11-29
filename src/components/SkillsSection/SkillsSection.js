@@ -7,6 +7,7 @@ import {
   GridItem,
   ItemIcon,
   ItemName,
+  Description,
 } from "./SkillsSection.styled";
 import data from "./data";
 
@@ -14,8 +15,12 @@ const AboutSection = () => {
   return (
     <Skills id="skills">
       <SkillsContainer>
-        <Title>&lt;skills🔨 /&gt;</Title>
-
+        <Title>What can I do?</Title>
+        <Description>
+          As a web developer, I have skills to build the client side web app,
+          program a backend server api for my web app, connect it to a database,
+          and deploy it to the world 🚀🌎!
+        </Description>
         <Grid>
           {data.map((item, index) => {
             const { img, name } = item;

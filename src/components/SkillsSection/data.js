@@ -20,9 +20,18 @@ const data = [
     name: "ReactJS",
   },
   {
-    img: require("../../assets/jquery.png").default,
-    name: "jQuery",
+    img: require("../../assets/nodejs.png").default,
+    name: "Node.js",
   },
+  {
+    img: require("../../assets/express.png").default,
+    name: "Express.js",
+  },
+  {
+    img: require("../../assets/mongodb.png").default,
+    name: "MongoDB",
+  },
+
   {
     img: require("../../assets/styledcomponents.png").default,
     name: "styled-components",
@@ -31,18 +40,9 @@ const data = [
     img: require("../../assets/mui.png").default,
     name: "MaterialUI",
   },
-
   {
-    img: require("../../assets/bootstrap.png").default,
-    name: "Bootstrap",
-  },
-  {
-    img: require("../../assets/python.png").default,
-    name: "Python",
-  },
-  {
-    img: require("../../assets/github.png").default,
-    name: "Github",
+    img: require("../../assets/git.png").default,
+    name: "Git",
   },
   {
     img: require("../../assets/stackoverflow.png").default,
