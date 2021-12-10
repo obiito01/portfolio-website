@@ -41,12 +41,12 @@ const data = [
     name: "MaterialUI",
   },
   {
-    img: require("../../assets/git.png").default,
-    name: "Git",
+    img: require("../../assets/firebase.png").default,
+    name: "Firebase",
   },
   {
-    img: require("../../assets/stackoverflow.png").default,
-    name: "StackOverflow",
+    img: require("../../assets/git.png").default,
+    name: "Git",
   },
 ];
 
