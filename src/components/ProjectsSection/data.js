@@ -1,5 +1,12 @@
 const data = [
   {
+    image: require("../../assets/social-media.png").default,
+    title: "WeConnect",
+    description: `WeConnect is a fullstack social media web app built with the MERN stack (MongoDB, Express, ReactJS and NodeJS). Try logging in to the guest account with "guest" as username and password.`,
+    link: "https://weconnect-social-media.netlify.app/login",
+    repo: "https://github.com/obiito01/social-media-client",
+  },
+  {
     image: require("../../assets/logoeshop.png").default,
     title: "LOGO eShop",
     description:
@@ -14,14 +21,6 @@ const data = [
       "This project is built with ReactJS. This project used The Movie Database (TMDB) API to fetch movie data. This website is deployed using Firebase.",
     link: "https://netflix-clone-a5e1a.web.app/",
     repo: "https://github.com/obiito01/netflix-clone",
-  },
-  {
-    image: require("../../assets/whatsapp-clone.png").default,
-    title: "WhatsApp Clone",
-    description:
-      "This is a WhatsApp clone web app made with React. You can send message in this app! Message data is stored in Firebase Firestore. Google Authentication is used too!",
-    link: "https://whatsapp-clone-d0564.web.app/rooms/HtwWPXyDqHIl8cE3yjtn",
-    repo: "https://github.com/obiito01/whatsapp-clone",
   },
   {
     image: require("../../assets/ultra.png").default,
