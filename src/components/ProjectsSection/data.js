@@ -18,8 +18,8 @@ const data = [
     image: require("../../assets/netflix-clone.png").default,
     title: "Netflix Clone",
     description:
-      "This project is built with ReactJS. This project used The Movie Database (TMDB) API to fetch movie data. This website is deployed using Firebase.",
-    link: "https://netflix-clone-a5e1a.web.app/",
+      "This project is built with ReactJS and SCSS. This project used The Movie Database (TMDB) API to fetch movie data. Website is deployed with Netlify",
+    link: "https://netflix-clone-ja.netlify.app/",
     repo: "https://github.com/obiito01/netflix-clone",
   },
   {
