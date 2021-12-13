@@ -5,7 +5,8 @@ export const Contact = styled.section`
   position: relative;
   height: calc(100vh - 80px);
   min-height: 700px;
-  background-color: #9fafff;
+  background-color: ${({ theme }) => theme.contactSectionPrimaryColor};
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const ContactContainer = styled(Container)`
@@ -18,20 +19,21 @@ export const ContactContainer = styled(Container)`
 `;
 
 export const ContactFormContainer = styled.div`
-  background-color: white;
   min-height: 600px;
   height: 70%;
   width: 95%;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 50px;
-  background-color: #667fff;
+  background-color: ${({ theme }) => theme.primaryButtonColor};
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const ContentLeft = styled.div`
   display: grid;
   place-items: center;
-  background-color: #667fff;
+  background-color: ${({ theme }) => theme.primaryButtonColor};
+  transition: ${({ theme }) => theme.transition};
   flex: 2;
   border-radius: 25px;
   z-index: 10;
@@ -64,7 +66,8 @@ export const ContentRight = styled.div`
   flex-direction: column;
   flex: 3;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.contactFormColor};
+  transition: ${({ theme }) => theme.transition};
 `;
 export const ContactForm = styled.form`
   width: 90%;
@@ -88,6 +91,8 @@ export const Title = styled.h1`
   font-family: "Varela Round", sans-serif;
   width: 100%;
   text-align: left;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
 `;
 export const Subtitle = styled.p`
   margin: ${({ error }) => (error ? `0 0 10px` : `0 0 0px`)};
@@ -100,7 +105,7 @@ export const Subtitle = styled.p`
 `;
 export const Input = styled.input`
   margin-bottom: 10px;
-  background-color: #edf6ff;
+  background-color: ${({ theme }) => theme.contactSectionInputColor};
   border: none;
   width: 100%;
   height: 50px;
@@ -108,11 +113,12 @@ export const Input = styled.input`
   padding: 0 25px;
   font-family: "Varela Round", sans-serif;
   font-size: 1rem;
-  transition: 200ms all ease-in-out;
+  transition: ${({ theme }) => theme.transition};
   border: ${({ empty }) => (empty ? "red solid 1px" : "none")};
+  color: ${({ theme }) => theme.primaryTextColor};
 
   &:focus {
-    background-color: #c9e2fb;
+    background-color: ${({ theme }) => theme.contactSectionInputFocusColor};
   }
 `;
 
@@ -121,18 +127,19 @@ export const TextArea = styled.textarea`
   resize: none;
   height: 14em;
   width: 100%;
-  background-color: #edf6ff;
+  background-color: ${({ theme }) => theme.contactSectionInputColor};
+  color: ${({ theme }) => theme.primaryTextColor};
   border: none;
   border-radius: 25px;
   padding: 25px 25px;
   overflow: hidden;
   font-family: "Varela Round", sans-serif;
   font-size: 1rem;
-  transition: 200ms all ease-in-out;
+  transition: ${({ theme }) => theme.transition};
   border: ${({ empty }) => (empty ? "red solid 1px" : "none")};
 
   &:focus {
-    background-color: #c9e2fb;
+    background-color: ${({ theme }) => theme.contactSectionInputFocusColor};
   }
 `;
 
@@ -141,11 +148,11 @@ export const Button = styled.button`
   height: 50px;
   border: none;
   border-radius: 50px;
-  background-color: #667fff;
-  color: white;
+  background-color: ${({ theme }) => theme.primaryButtonColor};
+  color: ${({ theme }) => theme.primaryButtonTextColor};
   font-size: 1.1rem;
   font-family: "Varela Round", sans-serif;
-  transition: all 400ms ease-in-out;
+  transition: ${({ theme }) => theme.transition};
 
   &:hover {
     background-color: #6e00ff;

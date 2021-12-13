@@ -4,7 +4,8 @@ import { Container } from "../../globalStyles";
 export const Skills = styled.section`
   /* height: calc(100vh - 80px); */
   min-height: calc(100vh - 80px);
-  background-color: #f8f9f9;
+  background-color: ${({ theme }) => theme.skillsSectionPrimaryColor};
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const SkillsContainer = styled(Container)`
@@ -15,7 +16,8 @@ export const SkillsContainer = styled(Container)`
 `;
 
 export const Title = styled.h1`
-  color: #000;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   font-size: 2.2rem;
   font-weight: 300;
   margin-bottom: 20px;
@@ -33,7 +35,8 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  color: #000;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 60px;
@@ -94,6 +97,8 @@ export const ItemIcon = styled.img`
   }
 `;
 export const ItemName = styled.h2`
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;

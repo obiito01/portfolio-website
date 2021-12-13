@@ -11,6 +11,7 @@ import {
   Title,
   Subtitle,
   Image,
+  ColorSpan,
   StyledButton as Button,
 } from "./HeroSection.styled";
 import { Link } from "react-scroll";
@@ -34,17 +35,8 @@ const HeroSection = () => {
             <TopLine>&lt;home /&gt;</TopLine>
             <Title>"Wecome to my personal website."</Title>
             <Subtitle>
-              -{" "}
-              <span
-                style={{
-                  color: mouseOver ? `#6e00ff` : `white`,
-                  fontWeight: "500",
-                  transition: "all 500ms ease-in-out",
-                }}
-              >
-                Jethro Au
-              </span>
-              , a web developer
+              - <ColorSpan mouseOver={mouseOver}>Jethro Au</ColorSpan>, a web
+              developer
             </Subtitle>
             <Link
               to="contact"

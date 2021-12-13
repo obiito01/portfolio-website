@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GlobalStyle from "./globalStyles";
+import GlobalStyle, { themes } from "./globalStyles";
 import {
   Navbar,
   HeroSection,
@@ -9,13 +9,15 @@ import {
   ContactSection,
   Confirmation,
 } from "./components";
+import { ThemeProvider } from "styled-components";
 
 function App() {
+  const [currentTheme, setCurrentTheme] = useState("light");
   const [confirmationOpen, setConfirmationOpen] = useState(false);
   return (
-    <>
+    <ThemeProvider theme={themes[currentTheme]}>
       <GlobalStyle />
-      <Navbar />
+      <Navbar currentTheme={currentTheme} setCurrentTheme={setCurrentTheme} />
       <HeroSection />
       <AboutSection />
       <SkillsSection />
@@ -30,7 +32,7 @@ function App() {
         confirmationOpen={confirmationOpen}
         setConfirmationOpen={setConfirmationOpen}
       />
-    </>
+    </ThemeProvider>
   );
 }
 

@@ -3,15 +3,17 @@ import { Container } from "../../globalStyles";
 import { BsDownload, BsGithub } from "react-icons/bs";
 
 export const ColorSpan = styled.span`
-  color: ${({ color }) => color};
+  color: ${({ theme }) => theme.primaryButtonColor};
   font-weight: ${({ fw }) => fw};
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const About = styled.section`
   position: relative;
   height: calc(100vh - 80px);
   min-height: 800px;
-  background-color: #eaecee;
+  background-color: ${({ theme }) => theme.aboutSectionPrimaryColor};
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const AboutContainer = styled(Container)`
@@ -66,7 +68,8 @@ export const TopLine = styled.p`
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 5px;
-  color: #808080;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
 
   @media (max-width: 1024px) {
     font-size: 1.3rem;
@@ -86,6 +89,8 @@ export const Title = styled.h1`
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 1px;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   @media (max-width: 1024px) {
     font-size: 1.7rem;
     margin-bottom: 5px;
@@ -104,6 +109,8 @@ export const Subtitle = styled.h2`
   font-weight: 500;
   margin-bottom: 50px;
   letter-spacing: 1px;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   @media (max-width: 1024px) {
     font-size: 1.7rem;
   }
@@ -121,6 +128,8 @@ export const Paragraph = styled.p`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 1px;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   @media (max-width: 1024px) {
     font-size: 1.3rem;
   }
@@ -165,11 +174,11 @@ export const Button = styled.button`
   height: 50px;
   border: none;
   border-radius: 25px;
-  background-color: #667fff;
-  color: white;
+  background-color: ${({ theme }) => theme.primaryButtonColor};
+  color: ${({ theme }) => theme.primaryButtonTextColor};
+  transition: ${({ theme }) => theme.transition};
   font-size: 1.4rem;
   font-family: "Varela Round", sans-serif;
-  transition: all 300ms ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;

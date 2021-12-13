@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import React, { useState, useEffect, useRef } from "react";
+import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
+import { BsSun, BsMoon } from "react-icons/bs";
 import {
   StyledNav,
   NavContainer,
@@ -17,10 +12,14 @@ import {
   NavSocials,
   SocialLink,
   ContactButton,
+  LogoText,
+  NavList,
+  ThemeSwitch,
+  SwitchCircle,
 } from "./Navbar.styled";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ currentTheme, setCurrentTheme }) => {
   const [click, setClick] = useState(false);
   const [scrollY, setScrollY] = useState(false);
 
@@ -36,6 +35,16 @@ const Navbar = () => {
     }
   };
 
+  const handleSwitch = (e) => {
+    if (e.target.checked) {
+      setCurrentTheme("dark");
+    } else {
+      setCurrentTheme("light");
+    }
+
+    console.log(currentTheme);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleResize);
   }, []);
@@ -43,87 +52,96 @@ const Navbar = () => {
   return (
     <StyledNav scrollY={scrollY}>
       <NavContainer>
-        <NavLogo to="/" spy={true} duration={500} smooth="true">
+        <NavLogo>
           <Link to="/" spy={true} duration={500} smooth="true">
-            &lt;jethroau /&gt;
+            <LogoText>&lt;jethroau /&gt;</LogoText>
           </Link>
+          <ThemeSwitch onClick={handleSwitch}>
+            <input type="checkbox" />
+            <SwitchCircle>
+              <BsMoon style={{ color: "black" }} />
+              <BsSun style={{ color: "black" }} />
+            </SwitchCircle>
+          </ThemeSwitch>
         </NavLogo>
         <NavHamburger onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </NavHamburger>
         <NavMenu click={click} onClick={() => setClick(false)}>
-          <NavItem
-            to="about"
-            offset={-80}
-            spy={true}
-            duration={500}
-            smooth="true"
-          >
-            <NavLink
+          <NavList click={click} onClick={() => setClick(false)}>
+            <NavItem
               to="about"
               offset={-80}
               spy={true}
               duration={500}
               smooth="true"
-              onClick={() => setClick(false)}
             >
-              About
-            </NavLink>
-          </NavItem>
-          <NavItem
-            to="skills"
-            offset={-80}
-            spy={true}
-            duration={500}
-            smooth="true"
-          >
-            <NavLink
+              <NavLink
+                to="about"
+                offset={-80}
+                spy={true}
+                duration={500}
+                smooth="true"
+                onClick={() => setClick(false)}
+              >
+                About
+              </NavLink>
+            </NavItem>
+            <NavItem
               to="skills"
               offset={-80}
               spy={true}
               duration={500}
               smooth="true"
-              onClick={() => setClick(false)}
             >
-              Skills
-            </NavLink>
-          </NavItem>
-          <NavItem
-            to="projects"
-            offset={-80}
-            spy={true}
-            duration={500}
-            smooth="true"
-          >
-            <NavLink
+              <NavLink
+                to="skills"
+                offset={-80}
+                spy={true}
+                duration={500}
+                smooth="true"
+                onClick={() => setClick(false)}
+              >
+                Skills
+              </NavLink>
+            </NavItem>
+            <NavItem
               to="projects"
               offset={-80}
               spy={true}
               duration={500}
               smooth="true"
-              onClick={() => setClick(false)}
             >
-              Projects
-            </NavLink>
-          </NavItem>
-          <NavItem
-            to="contact"
-            offset={-80}
-            spy={true}
-            duration={500}
-            smooth="true"
-          >
-            <NavLink
+              <NavLink
+                to="projects"
+                offset={-80}
+                spy={true}
+                duration={500}
+                smooth="true"
+                onClick={() => setClick(false)}
+              >
+                Projects
+              </NavLink>
+            </NavItem>
+            <NavItem
               to="contact"
               offset={-80}
               spy={true}
               duration={500}
               smooth="true"
-              onClick={() => setClick(false)}
             >
-              Contact
-            </NavLink>
-          </NavItem>
+              <NavLink
+                to="contact"
+                offset={-80}
+                spy={true}
+                duration={500}
+                smooth="true"
+                onClick={() => setClick(false)}
+              >
+                Contact
+              </NavLink>
+            </NavItem>
+          </NavList>
         </NavMenu>
         <NavSocials>
           <SocialLink href="https://github.com/obiito01" target="_blank">

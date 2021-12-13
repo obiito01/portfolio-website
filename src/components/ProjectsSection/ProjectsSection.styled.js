@@ -5,8 +5,8 @@ export const Projects = styled.section`
   position: relative;
   height: 100vh;
   min-height: 700px;
-  background-color: #fff;
-
+  background-color: ${({ theme }) => theme.projectSectionPrimaryColor};
+  transition: ${({ theme }) => theme.transition};
   @media (max-width: 1024px) {
     padding: 50px 0;
     height: auto;
@@ -28,6 +28,8 @@ export const Title = styled.h1`
   margin-bottom: 20px;
   letter-spacing: 2px;
   width: 100%;
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
 
   @media (max-width: 1024px) {
     text-align: center;
@@ -63,7 +65,8 @@ export const Description = styled.p`
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 300;
-
+  color: ${({ theme }) => theme.primaryTextColor};
+  transition: ${({ theme }) => theme.transition};
   @media (max-width: 1024px) {
     text-align: center;
     font-size: 1.1rem;
@@ -81,11 +84,10 @@ export const Description = styled.p`
 
 export const GithubLink = styled.a`
   text-decoration: none;
-  color: #667fff;
-  transition: 100ms all ease-in-out;
+  color: ${({ theme }) => theme.primaryButtonColor};
+  transition: ${({ theme }) => theme.transition};
 
   &:hover {
-    color: purple;
     text-decoration: underline;
   }
 `;

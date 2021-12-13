@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { Container, Button } from "../../globalStyles";
 
 export const Hero = styled.section`
-  background-color: #667fff;
+  background-color: ${({ theme }) => theme.primaryColor};
   color: white;
   height: 100vh;
   min-height: 600px;
   padding-top: 80px;
+  transition: ${({ theme }) => theme.transition};
 `;
 export const HeroContainer = styled(Container)`
   height: 100%;
@@ -84,6 +85,13 @@ export const Subtitle = styled.h2`
   }
 `;
 
+export const ColorSpan = styled.span`
+  color: ${({ mouseOver, theme }) =>
+    mouseOver ? theme.secondaryColor : "#fff"};
+  fontweight: 500;
+  transition: ${({ theme }) => theme.transition};
+`;
+
 export const HeroRight = styled.div`
   height: 100%;
   width: 100%;
@@ -108,10 +116,13 @@ export const Image = styled.img`
 `;
 
 export const StyledButton = styled(Button)`
+  background-color: ${({ theme }) => theme.secondaryButtonColor};
+  color: ${({ theme }) => theme.primaryButtonTextColor};
   margin-bottom: 50px;
   transition: all 300ms ease-in-out;
   border-radius: 25px;
   &:hover {
     transform: scale(1.05);
+    color: #000;
   }
 `;

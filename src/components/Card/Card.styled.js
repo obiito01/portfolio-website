@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
-  background-color: white;
+  background-color: ${({ theme }) => theme.primaryCardColor};
   width: 100%;
   overflow: hidden;
   box-shadow: 0px 3px 12px rgb(0 0 0 / 15%);
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  transition: all 300ms ease-in-out;
+  transition: ${({ theme }) => theme.transition};
 
   @media (hover: hover) {
     &:hover {
@@ -53,19 +53,20 @@ export const ContentContainer = styled.div`
   position: relative;
 `;
 export const Title = styled.h1`
-  color: #2d314d;
+  color: ${({ theme }) => theme.primaryButtonColor};
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 1px;
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const Description = styled.p`
-  color: #9698a6;
+  color: ${({ theme }) => theme.primaryTextColor};
   font-size: 0.95rem;
   font-weight: 300;
   margin-bottom: 30px;
-  letter-spacing: 0.5px;
+  transition: ${({ theme }) => theme.transition};
 
   @media (max-width: 768px) {
     letter-spacing: 0.3px;
@@ -90,15 +91,15 @@ export const Link = styled.a`
   padding: 5px 15px;
   border: none;
   border-radius: 50px;
-  background-color: #667fff;
+  background-color: ${({ theme }) => theme.primaryButtonColor};
   white-space: nowrap;
-  color: #fff;
+  color: ${({ theme }) => theme.primaryButtonTextColor};
   cursor: pointer;
   text-decoration: none;
-  transition: 300ms all ease-in-out;
+  transition: ${({ theme }) => theme.transition};
 
   &:hover {
-    background-color: #6e00ff;
+    opacity: 0.6;
   }
 
   &:not(:last-child) {
