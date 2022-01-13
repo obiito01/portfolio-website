@@ -34,18 +34,14 @@ const AboutSection = () => {
               Jethro Au, a <ColorSpan color="red">web developer</ColorSpan>! 💻
             </Subtitle>
             <Paragraph>
-              A passionate web developer with great interest in the web
-              development. Love to learn different tech stacks and develop
-              different web apps. Excellent development skills and project
-              experience gained from my education and personal projects. My main
-              tech stack involves <ColorSpan fw="400">ReactJS</ColorSpan>,{" "}
-              <ColorSpan fw="400">Node.js</ColorSpan>,{" "}
-              <ColorSpan fw="400">Express.js</ColorSpan>, and{" "}
-              <ColorSpan fw="400">MongoDB</ColorSpan>, the{" "}
-              <ColorSpan color="#667fff" fw="400">
-                MERN
-              </ColorSpan>{" "}
-              stack.
+              A hardworking and passionate STEM graduate with great interest and
+              skills in Web Development. Excellent communication skills and
+              project experience gained from my education and personal projects.
+              Always love to learn different stacks of technologies. My current
+              tech stack includes <ColorSpan fw="400">ReactJS</ColorSpan>,{" "}
+              <ColorSpan fw="400">Next.js</ColorSpan>,{" "}
+              <ColorSpan fw="400">Express.js</ColorSpan>,{" "}
+              <ColorSpan fw="400">MongoDB</ColorSpan>, and more.
             </Paragraph>
             <ButtonControl>
               <a href={cv} download="CV.pdf" style={{ textDecoration: "none" }}>

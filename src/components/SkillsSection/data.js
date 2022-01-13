@@ -1,11 +1,7 @@
 const data = [
   {
     img: require("../../assets/html.png").default,
-    name: "HTML5",
-  },
-  {
-    img: require("../../assets/css.png").default,
-    name: "CSS3",
+    name: "HTML/CSS",
   },
   {
     img: require("../../assets/javascript.png").default,
@@ -16,22 +12,25 @@ const data = [
     name: "SASS/SCSS",
   },
   {
+    img: require("../../assets/tailwindcss.png").default,
+    name: "TailwindCSS",
+  },
+  {
     img: require("../../assets/react.png").default,
     name: "ReactJS",
   },
   {
-    img: require("../../assets/nodejs.png").default,
-    name: "Node.js",
+    img: require("../../assets/next-js.svg").default,
+    name: "Next.js",
   },
   {
-    img: require("../../assets/express.png").default,
-    name: "Express.js",
+    img: require("../../assets/nodejs.png").default,
+    name: "Node.js/Express.js",
   },
   {
     img: require("../../assets/mongodb.png").default,
     name: "MongoDB",
   },
-
   {
     img: require("../../assets/styledcomponents.png").default,
     name: "styled-components",
@@ -41,12 +40,12 @@ const data = [
     name: "MaterialUI",
   },
   {
-    img: require("../../assets/firebase.png").default,
-    name: "Firebase",
+    img: require("../../assets/framer-motion.jpg").default,
+    name: "Framer Motion",
   },
   {
-    img: require("../../assets/git.png").default,
-    name: "Git",
+    img: require("../../assets/graphql.png").default,
+    name: "GraphQL",
   },
 ];
 
